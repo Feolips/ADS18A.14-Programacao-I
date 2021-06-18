@@ -11,7 +11,7 @@ let media, totalPontos = 0; // É necessário iniciar com valor zero para o laç
 
 // Entrada das quatro notas:
 for (let i = 1; i < 5; i++){
-	nota[i] = parseFloat(input("Nota: "));
+	nota[i] = parseFloat(input(i + "ª nota: "));
 	totalPontos += nota[i];
 	media = totalPontos / i;
 //	console.log("Média parcial: ",media);
