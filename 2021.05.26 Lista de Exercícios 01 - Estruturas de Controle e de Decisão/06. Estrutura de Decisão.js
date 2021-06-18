@@ -21,30 +21,27 @@ if (idade[1] > idade[2] && idade[1] > idade[3]){
 	nomeMaisVelha = nome[1];
 	if (idade[2] > idade[3]){
 		nomeMaisNova = nome[3];
-	}
-	else {
+	} else {
 		nomeMaisNova = nome[2];
-	}
+	  }
 }
 
 if (idade[2] > idade[1] && idade[2] > idade[3]){
 	nomeMaisVelha= nome[2];
 	if (idade[1] > idade[3]){
 		nomeMaisNova = nome[3];
-	}
-	else {
+	} else {
 		nomeMaisNova = nome[1];
-	}
+	  }
 }
 
 if (idade[3] > idade[1] && idade[3] > idade[2]){
 	nomeMaisVelha = nome[3];
 	if (idade[1] > idade[2]){
 		nomeMaisNova = nome[2];
-	}
-	else {
+	} else {
 		nomeMaisNova = nome[1];
-	}
+	  }
 }
 
 // Retorno
