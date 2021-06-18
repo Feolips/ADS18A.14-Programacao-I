@@ -16,10 +16,10 @@ for (i = 0; i > 3; i++){
 // Estrutura de decisão e Retorno
 if (a > b && a > c){
 	console.log(a, "é o maior valor.");
-}
-if (b > a && b > c){
+} else if (b > a && b > c){
 	console.log(b, "é o maior valor.");
-}
-if (c > a && c > b){
+} else if (c > a && c > b){
 	console.log(c, "é o maior valor.");
-}
+} else if (a === b || b === c || a === c){
+	console.log("Todos os valores são iguais");
+} else {console.log("Cálculo impossível")};
