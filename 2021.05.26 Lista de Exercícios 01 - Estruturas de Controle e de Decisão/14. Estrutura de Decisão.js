@@ -58,12 +58,17 @@ else{
 let ladosMenores = ladoOrdenado[2] + ladoOrdenado[3];
 if (ladoOrdenado[1] < ladosMenores){
 	console.log("Os vetores " + lado[1] + ", " + lado[2] + " e " + lado[3] + " formam um triângulo.");
-	if (lado[1] == lado[2] && lado[1] == lado[3]){
+	if (lado[1] === lado[2] && lado[1] === lado[3]){
 		console.log("O triângulo formado é do tipo equilátero.");
-	} else if ((lado[1] == lado[2] || lado[1] == lado[3] || lado[2] == lado[3]) && lado[1] != lado[2] || lado[1] != lado[3]){
+	} else if ((lado[1] === lado[2] || lado[1] === lado[3] || lado[2] === lado[3]) && lado[1] !== lado[2] || lado[1] !== lado[3]){
 		console.log("O triângulo formado é do tipo isóceles.");
-	} else {console.log("O triângulo formado é do tipo escaleno.");}
+	} else if (lado[1] !== lado[2] && lado[1] !== lado[3]) {
+		console.log("O triângulo formado é do tipo escaleno.");
+	}
 	
+// Investigar por que o Escaleno não funciona:
+//	} else {console.log("O triângulo formado é do tipo escaleno.");}
+
 } else {console.log("Os vetores " + lado[1] + ", " + lado[2] + " e " + lado[3] + " não formam um triângulo.");}
 
 
