@@ -26,9 +26,9 @@ if (media >= 5){
 } else {situacao = "reprovado.";}
 
 // Boletim:
-console.log("		BOLETIM");
-console.log("O(a) aluno(a)", nomeAluno, "está", situacao);
+console.log("	  BOLETIM");
+console.log("O(a) aluno(a)", nomeAluno, "está " + situacao);
 for (let i = 1; i < 5; i++){
-	console.log(i,"ª nota:", nota[i]);
+	console.log(i + "ª nota:", nota[i].toPrecision(2.2));
 }
-console.log("Média final:", media);
+console.log("Média final:", media.toPrecision(2.2));
