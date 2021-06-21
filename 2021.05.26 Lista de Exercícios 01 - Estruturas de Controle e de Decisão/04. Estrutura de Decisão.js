@@ -9,8 +9,7 @@ let C;
 // Estrutura de decisão
 if (A > B){
 	C = A - B;
-}
-else{
+} else {
 	C = B - A;
 }
 // Retorno
