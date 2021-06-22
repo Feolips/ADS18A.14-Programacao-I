@@ -18,32 +18,4 @@ while (valor > 1){
 // Retorno
 console.log("O somatório de todos os valores inseridos é: " + somatorio)
 
-/*
-let nota = [];
-let media, totalPontos = 0; // É necessário iniciar com valor zero para o laço operar.
 
-// Entrada das quatro notas:
-for (let i = 1; i < 5; i++){
-	nota[i] = parseFloat(input(i + "ª nota: "));
-	totalPontos += nota[i];
-	media = totalPontos / i;
-//	console.log("Média parcial: ",media);
-}
-
-// Decisão da situação do aluno:
-let situacao;
-if (media >= 5){
-	situacao = "aprovado.";
-} else if (media >= 4 && media < 5) {
-	situacao = "em recuperação.";
-} else {situacao = "reprovado.";}
-
-// Boletim:
-console.log("	  BOLETIM");
-console.log("O(a) aluno(a)", nomeAluno, "está " + situacao);
-for (let i = 1; i < 5; i++){
-	console.log(i + "ª nota:", nota[i].toPrecision(2.2));
-}
-console.log("Média final:", media.toPrecision(2.2));
-
-*/
