@@ -1,6 +1,6 @@
 
 //							ESTRUTURA DE REPETIÇÃO
-// 04. Escrever um programa para calcular e escrever o fatorial de um número in-
+// 05. Escrever um programa para calcular e escrever o fatorial de um número in-
 //     teiro N, sabendo-se que:
 //                             N! = 1 {se N = 0}
 //                                    ou
