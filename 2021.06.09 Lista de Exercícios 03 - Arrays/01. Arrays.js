@@ -1,22 +1,25 @@
-// 				ARRAYS
+//							ARRAYS
 // 01. Ler um array B de 10 elementos que podem ser repetidos.
 //     Os elementos únicos de B devem ser gravados no array C.
 
-// comando para leitura de dados digitados
+// Entrada
 input = require("prompt-sync")();
-// Array:
-const B = [5,2,5,1,2,6,7,9,6,0];
-// Laço for:
-for (i = 0; i < B.lenght; i++){
-	// Condicional:
-	if () && (){
+let B = [];
+let C = [];
+let b, c;
+// Populando o array;
+for (b = 1; b <= 10; b++){
+	B[b] = parseInt(input('Insira o ' + b + '° valor: '));
+}
+// Conferindo valores e agregando apenas os únicos:
+for (b = 1; b <= B.length; b++){
+	for (c = 1; c <= B.length; c++){
+		if (B[b] === B[c]){
+			C[c] = B[b];
+		}
 	}
 }
-
-/*
-input = require("prompt-sync")(); // comando para leitura de dados digitados
-let num1 = parseInt(input("Digite um número: "));
-let num2 = parseInt(input("Digite outro número: "));
-soma = num1 + num2;
-console.log(soma);
-*/
+// Retorno
+for (c = 1; c <= C.length; c++){
+	console.log(C[c]);
+}
