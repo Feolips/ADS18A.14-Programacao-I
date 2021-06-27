@@ -1,8 +1,8 @@
 //									ARRAYS
-// 02. Ler um array R de 10 elementos e outro S de 20 elementos. A seguir gere
+// 03. Ler um array R de 10 elementos e outro S de 20 elementos. A seguir gere
 //     um array X que contenha uma única ocorrência dos elementos existentes em
-//     R *ou* em S (união). Após completar o preenchimento escrever o array X. 
-//     Considere que nos arrays R e S podem existir elementos repetidos.
+//     R *e* em S (interseção). Após completar o preenchimento escrever o array
+//     X. Considere que nos arrays R e S podem existir elementos repetidos.
 
 // Entrada
 input = require("prompt-sync")();
