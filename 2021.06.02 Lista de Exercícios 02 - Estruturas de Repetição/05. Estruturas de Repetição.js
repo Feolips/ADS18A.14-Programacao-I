@@ -9,14 +9,13 @@
 // Entrada de dados
 input = require("prompt-sync")();
 let N = parseInt(input("Insira um valor: "));
-let fatorial = N;
+let fatorial = 1;
 // Condicional e Repetição
-if (N > 0){
-	let i;
-	for (i == N; i >= 1 ; i--){
+if (N > 1){
+	for (var i = N; i > 1 ; i--){
 		fatorial = fatorial * i;
 	}
-} else if (N == 0) {
+} else if (N === 0 || N === 1) {
 	fatorial = 1;
 } else if (N < 0) {
 	fatorial = "um valor inválido";
