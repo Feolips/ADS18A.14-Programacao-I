@@ -7,14 +7,16 @@
 
 // Entrada de dados
 input = require("prompt-sync")();
-let N = parseInt(input("Insira um valor inteiro: "));
+let N = parseInt(input("Insira um valor inteiro positivo: "));
 let fibonacci = 0;
 // Condicional e Repetição
-if (N > 2){ 
-	let i;
+if (N < 0) {console.log('É necessário um valor positivo.')}
+if (N === 0) {fibonacci = 0}
+if (N === 1) {fibonacci = 1}
+if (N > 2){
 	let fi_1Ant = 1;
 	let fi_2Ant = 0;
-	for (i = 1; i <= N ; i++){
+	for (var i = 1; i <= N ; i++){
 		console.log(i + "° número de Fibonacci: " + fibonacci);
 		fi_2Ant = fi_1Ant;
 		fi_1Ant = fibonacci;
