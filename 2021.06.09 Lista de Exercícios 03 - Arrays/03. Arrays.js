@@ -1,4 +1,4 @@
-//									ARRAYS
+//                                     ARRAYS
 // 03. Ler um array R de 10 elementos e outro S de 20 elementos. A seguir gere
 //     um array X que contenha uma única ocorrência dos elementos existentes em
 //     R *e* em S (interseção). Após completar o preenchimento escrever o array
