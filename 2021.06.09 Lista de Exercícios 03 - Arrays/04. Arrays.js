@@ -1,4 +1,4 @@
-//									ARRAYS
+//                                     ARRAYS
 // 04. Um armazém trabalha com 10 mercadorias diferentes identificadas pelos nú-
 //     meros inteiros de 0 a 9. O dono do armazém anota a quantidade de cada mer-
 //     cadoria vendida durante o mês. Ele tem uma tabela que indica para cada
