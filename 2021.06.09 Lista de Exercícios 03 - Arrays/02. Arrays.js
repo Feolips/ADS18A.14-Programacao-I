@@ -9,22 +9,22 @@ input = require("prompt-sync")();
 let R = [];
 let S = [];
 let X = [];
-let r, s, x;
-for (r = 1; r <= 10; r++){
+// Populando o Array
+for (var r = 1; r <= 10; r++){
 	R[r] = parseInt(input('Insira o ' + r + '° valor de R: '));
 }
-for (s = 1; s <= 20; r++){
+for (var s = 1; s <= 20; s++){
 	S[s] = parseInt(input('Insira o ' + s + '° valor de S: '));
 }
 // Conferindo valores e agregando apenas os únicos:
 for (r = 1; r <= R.length; r++){
 	for (s = 1; s <= S.length; s++){
-		if (R[r] === S[s]){
+		if (R[r] != S[s]){
 			X[r] = R[r];
 		}
 	}
 }
 // Retorno
-for (x = 1; x <= X.length; c++){
+for (var x = 1; x <= X.length; x++){
 	console.log(X[x]);
 }
