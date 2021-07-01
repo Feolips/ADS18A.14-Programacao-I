@@ -5,12 +5,21 @@
 // Entrada
 input = require("prompt-sync")();
 let B = [];
-let C = [];
-let b, c;
 // Populando o array;
-for (b = 1; b <= 10; b++){
+for (var b = 1; b <= 10; b++){
 	B[b] = parseInt(input('Insira o ' + b + '° valor: '));
 }
+// Função "ignore os itens duplicados" usando o .indexOf
+function unicos(valor, indice, proprio){
+	return proprio.indexOf(valor) === indice;
+}
+
+// Assimilação e Retorno
+let C = B.filter(unicos);
+console.log('Array C = ' + C + '.');
+
+
+/*        LIXEIRA
 // Conferindo valores e agregando apenas os únicos:
 for (b = 1; b <= B.length; b++){
 	for (c = 1; c <= B.length; c++){
@@ -19,7 +28,9 @@ for (b = 1; b <= B.length; b++){
 		}
 	}
 }
+
 // Retorno
 for (c = 1; c <= C.length; c++){
 	console.log(C[c]);
 }
+*/
